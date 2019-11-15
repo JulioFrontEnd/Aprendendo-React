@@ -11,6 +11,7 @@ const Index = ()=>{
             <Link to='/helloworld'>01</Link>
             <Link to='/littlecomponent'>02</Link>
             <Link to='/starwars'>03</Link>
+            <Link to='/prop'>04</Link>
             </div>
         </div>
     ); 

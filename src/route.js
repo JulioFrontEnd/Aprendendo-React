@@ -4,7 +4,8 @@ import Index from './components/Index';
 import App from './App.js';
 import Starwars from './components/starwars';
 import LittleComponent from './components/LittleComponent';
-import DetailSW from './components/DetailSW'
+import DetailSW from './components/DetailSW';
+import Prop from './components/props';
 const Routes = ()=>{
     return(
         <BrowserRouter>
@@ -19,7 +20,6 @@ const Routes = ()=>{
                 <Route path='/starwars/detail/:id' component={DetailSW}/>
             </Switch>
         </BrowserRouter>
-    );
-        
+    );  
 }
 export default Routes;
