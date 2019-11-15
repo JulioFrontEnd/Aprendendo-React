@@ -1,0 +1,26 @@
+.mainCommand{
+    border: .5px solid  #b2bec3;
+    padding: 2%;
+    margin: 4%;
+}
+.mainCommand .command{
+    width: 100%;
+    color: #636e72;
+}
+.mainCommand .command .title{
+    font-weight: bold;
+    margin-right: 2%;
+    color: #2d3436;
+}
+.commandtitle{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    color: #e17055 !important;
+    border-bottom: 1px solid #e17055;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+.main{
+    color: #e17055 !important;
+}

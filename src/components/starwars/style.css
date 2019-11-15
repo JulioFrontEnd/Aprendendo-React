@@ -1,0 +1,64 @@
+
+.buttonAPI{
+    display: flex;
+    justify-content: space-between;
+    border: none !important;
+}
+.littleButton{
+    border: 1px solid #e17055;
+    color: #e17055;
+    background-color: transparent;
+    padding: 2%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linkList{
+    padding: 1%;
+    margin-left: auto;
+}
+
+.littleButton:hover{
+    background: linear-gradient(to right, #e17055 0%,#f99e89 100%);
+    border: none;
+    transition: all .2s;
+    color: #dfe6e9;
+}
+
+.littleButton[disabled]{
+    transition: all 1s;
+    opacity: 0;
+}
+
+.buttonAPI:hover{
+    background-color: transparent !important;
+    cursor: default !important;
+}
+
+.containerAPI{
+    padding: 2%;
+}
+.containerAPI div{
+    margin-bottom: 2%;
+    border: 1px solid #e17055;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.containerAPI div .titleAPI{
+    color: #e17055;
+}
+.containerAPI div:hover{
+    background-color: #6e342a;
+    border: 1px solid #6e342a;
+    color: #dfe6e9;
+    transition: .5s solid;
+    cursor: pointer;
+}
+.titleAPI{
+    margin-right: 1%;
+}
