@@ -12,6 +12,7 @@ const Index = ()=>{
             <Link to='/littlecomponent'>02</Link>
             <Link to='/starwars'>03</Link>
             <Link to='/prop'>04</Link>
+            <Link to='/rtwrite'>05</Link>
             </div>
         </div>
     ); 
