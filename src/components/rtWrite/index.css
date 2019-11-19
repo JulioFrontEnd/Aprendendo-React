@@ -13,8 +13,8 @@
 .l{
     display: flex;
     flex-direction: column;
-    padding: 1%;
+    padding: 2%;
     width: 40%;
     align-items: flex-start;
-    border-bottom: none!important;
+    width: 100%;
 }
