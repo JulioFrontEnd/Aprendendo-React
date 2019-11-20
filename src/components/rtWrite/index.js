@@ -48,8 +48,8 @@ export default class RtWrite extends Component {
         this.ifOffline()
     }
     
-    handleInputChange = () => {
-      this.setState({ name: document.getElementById("inpute").value }); 
+    handleInputChange = (event) => {
+      this.setState({ name: event.target.value }); 
     };
 
     handleSend = async () => {

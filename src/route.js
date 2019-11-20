@@ -7,6 +7,7 @@ import LittleComponent from './components/LittleComponent';
 import DetailSW from './components/DetailSW';
 import Prop from './components/props';
 import RtWrite from './components/rtWrite';
+import Upcomponent from './components/upcomponent/index';
 const Routes = ()=>{
     return(
         <BrowserRouter>
@@ -19,6 +20,7 @@ const Routes = ()=>{
                 <Route path="/littlecomponent" component={LittleComponent} />
                 <Route path='/prop' component={Prop} />
                 <Route path='/rtwrite' component={RtWrite} />
+                <Route path='/componentboss' component={Upcomponent} />
                 {/* Subrotas do path='starwars' */}
                 <Route path='/starwars/detail/:id' component={DetailSW}/>
             </Switch>

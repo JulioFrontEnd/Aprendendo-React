@@ -1,0 +1,7 @@
+.container-temperature{
+    padding: 2%;
+    border: 1px solid #0984e3;
+}
+.container-temperature .temperatureInput{
+    margin: 2% 0;
+}
