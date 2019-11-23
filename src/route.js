@@ -7,10 +7,15 @@ import LittleComponent from './components/LittleComponent';
 import DetailSW from './components/DetailSW';
 import Prop from './components/props';
 import RtWrite from './components/rtWrite';
-import Upcomponent from './components/upcomponent/index';
+import Upcomponent from './components/upcomponent/';
+import Menu from './components/menu';
 const Routes = ()=>{
     return(
+        
         <BrowserRouter>
+            <Switch>
+                <Route path="/" render={props=><Menu {...props} color='primary'/>}/>
+            </Switch>
             <Switch>
                 {/* ROTAS DO INDEX */}
                 <Route exact path="/" component={Index} />

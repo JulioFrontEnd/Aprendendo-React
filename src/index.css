@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
 
 body{
     background-color: #dfe6e9;
     color: #2d3436;
-    padding: 1%;   
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
 }
 *{
     padding: 0;
     margin: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 .tittle{
     color: #0984e3;
