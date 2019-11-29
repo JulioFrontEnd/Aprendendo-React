@@ -9,25 +9,30 @@ import Prop from './components/props';
 import RtWrite from './components/rtWrite';
 import Upcomponent from './components/upcomponent/';
 import Menu from './components/menu';
+import Redirect from './components/redirect';
+import MyFirstReduxTest from './components/MyFirstReduxTest';
 const Routes = ()=>{
     return(
         
         <BrowserRouter>
             <Switch>
                 <Route path="/" render={props=><Menu {...props} color='primary'/>}/>
+                
             </Switch>
             <Switch>
                 {/* ROTAS DO INDEX */}
                 <Route exact path="/" component={Index} />
                 <Route exact path="/starwars" component={Starwars} />
-
+                <Route exact path='/contact' render={props=><Redirect {...props} link='https://www.github.com/juliofrontend'/>}/>
                 <Route path="/helloworld" component={App} />
                 <Route path="/littlecomponent" component={LittleComponent} />
                 <Route path='/prop' component={Prop} />
                 <Route path='/rtwrite' component={RtWrite} />
                 <Route path='/componentboss' component={Upcomponent} />
+                <Route path='/videocenter' component={MyFirstReduxTest} />
                 {/* Subrotas do path='starwars' */}
                 <Route path='/starwars/detail/:id' component={DetailSW}/>
+                
             </Switch>
         </BrowserRouter>
     );  

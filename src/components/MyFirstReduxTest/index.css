@@ -1,0 +1,49 @@
+.video{
+    max-width: 100%;
+}
+.videoController{
+    width: 56%;
+}
+.videoPlayer{
+    padding: 1% 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.videos{
+    list-style: none;
+    padding: 1%;
+    background-color: #2d3436;
+    margin-left: 2%;
+    height: 600px;
+    width: 42%;
+    overflow-y: scroll;
+    scrollbar-face-color: red;
+    scrollbar-arrow-color: red;
+    scrollbar-shadow-color: royalblue;
+    scrollbar-highlight-color: red;
+}
+.videos .videoItem{
+    padding: 2%;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dfe6e9;
+    margin: 1% 0;
+}
+.videos .videoItem:hover, .videoChanged{
+    background-color: #212121;
+    box-shadow: 5px 0px 0px 0px #0984e3;
+}
+.videoName{
+    text-align: center;
+}
+@media only screen and (max-width: 900px) {
+    .videos{
+        width: 100%;
+    }
+    .videoController{
+        width: 100%;
+    }
+  }

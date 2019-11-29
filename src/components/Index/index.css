@@ -8,6 +8,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 #index a{
     border: 1px solid #0984e3;
@@ -21,4 +23,7 @@
     background: #0984e3;
     color: #dfe6e9;
     transition: all .5s;
+}
+.main-content{
+    max-width: 100%;
 }

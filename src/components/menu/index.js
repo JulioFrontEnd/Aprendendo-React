@@ -22,7 +22,7 @@ export default class Menu extends Component{
             <MenuBuilder color={this.props.color}>
                 {
                     content.map((p)=>{
-                        return <p><Link key={p.id} to={p.webRoute}>{p.content}</Link></p>
+                        return <p><Link key={p.id.toString()} to={p.webRoute}>{p.content}</Link></p>
                         }
                     )
                 }

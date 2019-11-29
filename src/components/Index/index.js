@@ -5,7 +5,7 @@ import './index.css';
 const Index = ()=>{
     return(
         
-        <div>
+        <div className='Main-Content'>
             <h3 id='indexTitle'>MINHAS AULAS!, SEJA BEM VINDO(A)</h3>
             <div id='index'>
             <Link to='/helloworld'>01</Link>
@@ -14,6 +14,8 @@ const Index = ()=>{
             <Link to='/prop'>04</Link>
             <Link to='/rtwrite'>05</Link>
             <Link to='/componentboss'>06</Link>
+            <Link to='/videocenter'>07</Link>
+
             </div>
         </div>
     ); 
