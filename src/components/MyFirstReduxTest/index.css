@@ -17,10 +17,6 @@
     height: 600px;
     width: 42%;
     overflow-y: scroll;
-    scrollbar-face-color: red;
-    scrollbar-arrow-color: red;
-    scrollbar-shadow-color: royalblue;
-    scrollbar-highlight-color: red;
 }
 .videos .videoItem{
     padding: 2%;
