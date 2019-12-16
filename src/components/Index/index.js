@@ -15,6 +15,8 @@ const Index = ()=>{
             <Link to='/rtwrite'>05</Link>
             <Link to='/componentboss'>06</Link>
             <Link to='/videocenter'>07</Link>
+            <Link to='/apiLearning'>(8) API (laravel request)</Link>
+            <Link to='/animation'>9</Link>
 
             </div>
         </div>

@@ -11,6 +11,8 @@ import Upcomponent from './components/upcomponent/';
 import Menu from './components/menu';
 import Redirect from './components/redirect';
 import MyFirstReduxTest from './components/MyFirstReduxTest';
+import apiLaravel from './components/apiLaravel';
+import animationCSS from './components/animationCSS';
 const Routes = ()=>{
     return(
         
@@ -30,6 +32,8 @@ const Routes = ()=>{
                 <Route path='/rtwrite' component={RtWrite} />
                 <Route path='/componentboss' component={Upcomponent} />
                 <Route path='/videocenter' component={MyFirstReduxTest} />
+                <Route path='/apiLearning' component={apiLaravel} />
+                <Route path='/animation' component={animationCSS} />
                 {/* Subrotas do path='starwars' */}
                 <Route path='/starwars/detail/:id' component={DetailSW}/>
                 
