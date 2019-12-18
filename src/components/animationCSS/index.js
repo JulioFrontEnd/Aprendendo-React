@@ -39,6 +39,7 @@ export default class animationCSS extends React.Component{
             left:'50%',
             transform: 'translate(-50%,0)',
             transition: 'all 3s',
+            zIndex:'1',
         }
         const crossBow = {
             ...whatImDoing,
@@ -49,8 +50,12 @@ export default class animationCSS extends React.Component{
             fontSize:'3em',
             transition: 'all 5s',
         }
+        const relative = {
+            position:'relative',
+            zIndex:'1',
+        }
         return(
-            <div>
+            <div style={relative} className='animationLab'>
                 <h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3>
                 <h3 id='done' style={whatImDoing}>AnotherText!</h3>
                 <h1 style={crossBow}>MAIN TEXT!</h1>

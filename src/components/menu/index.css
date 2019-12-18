@@ -37,6 +37,9 @@
 }
 .menu{
     margin-top: 10%;
+    position: absolute;
+    width: 100%;
+    left: 0;
     text-align: center;
 }
 .container-dark .menu p a{
@@ -47,17 +50,17 @@
     
 }
 .container-primary .menu p a{
-    color: #2d3436;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     
 }
 .sidebar .menu p a:hover{
-    color: #0984e3;
+    color: #0984e3 !important;
 }
 .sidebar .menu p{
     padding: 2%;
+    margin-top: 2%;
 }
 
 #chk:checked ~ .sidebar, #chk:checked ~ .bg-dark{
@@ -65,6 +68,7 @@
 }
 .btn-close-menu{
     position: absolute;
-    top: 10px;
+    z-index: 1000;
+    top: -100px;
     right: 10px;
 }
