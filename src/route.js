@@ -13,6 +13,7 @@ import Redirect from './components/redirect';
 import MyFirstReduxTest from './components/MyFirstReduxTest';
 import apiLaravel from './components/apiLaravel';
 import animationCSS from './components/animationCSS';
+import animatedBackground from './components/animatedBackground';
 const Routes = ()=>{
     return(
         
@@ -34,6 +35,7 @@ const Routes = ()=>{
                 <Route path='/videocenter' component={MyFirstReduxTest} />
                 <Route path='/apiLearning' component={apiLaravel} />
                 <Route path='/animation' component={animationCSS} />
+                <Route path='/bganimated' component={animatedBackground} />
                 {/* Subrotas do path='starwars' */}
                 <Route path='/starwars/detail/:id' component={DetailSW}/>
                 

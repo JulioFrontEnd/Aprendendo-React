@@ -2,8 +2,9 @@ import React from 'react';
 import './index.css';
 export default class animationCSS extends React.Component{
     state = {
-        className:50,
+        className:-50,
         classBoss:25,
+        letterSpacing:'400rem',
     }
 
     handleScroll = () =>{ 
@@ -20,7 +21,7 @@ export default class animationCSS extends React.Component{
                 this.setState({
                     // className: ((document.documentElement.scrollTop+element>100)?100:element),
                        className:50,
-                       classBoss:25,
+                       classBoss:50,
                 })
             }
            
@@ -29,7 +30,8 @@ export default class animationCSS extends React.Component{
 
        }   
     componentDidMount() {
-        window.onscroll = () => this.handleScroll();   
+        window.onscroll = () => this.handleScroll();
+        setTimeout(()=>this.setState({letterSpacing:'4px',className:'50'}),500)   
     }
     render(){
         const whatImDoing = {
@@ -48,7 +50,9 @@ export default class animationCSS extends React.Component{
             left:'35%',
             transform: 'translate(-50%,0)',
             fontSize:'3em',
-            transition: 'all 5s',
+            transition: 'all 5s, letter-spacing 2s',
+            whiteSpace: 'nowrap',
+            letterSpacing:this.state.letterSpacing,
         }
         const relative = {
             position:'relative',
@@ -58,7 +62,7 @@ export default class animationCSS extends React.Component{
             <div style={relative} className='animationLab'>
                 <h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3><h3 className='undefined'>DONE!</h3>
                 <h3 id='done' style={whatImDoing}>AnotherText!</h3>
-                <h1 style={crossBow}>MAIN TEXT!</h1>
+                <h1 style={crossBow} className='animationMainText'>MAIN TEXT!</h1>
             </div>
         );
     }
